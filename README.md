@@ -1,4 +1,4 @@
-# Image and Text Embedding Exercises
+# Image and Text Feature Extraction Exercise
 
 This repository is a simple exercise to extract image and text feature using state-of-the-art image and text embedding models.
 
@@ -32,7 +32,7 @@ We will be using [Twitter malicious data](https://about.twitter.com/en_us/values
 4. Find the corresponding tweets in ira_tweets_csv_hashed file and save it to twitter_tweets.txt. (Make sure to read it with 'utf-8' encoding and save it with 'utf-8' encoding as well)
 
 ### Extracting Image Features
-1. Load images, resize images to (224, 224, 3) (remain aspect ratio and pad white pixels if the original images are not square), and nomralize input vectors with 'preprocess_input' function on Keras.
+1. Load images, resize images to (224, 224, 3) (remain aspect ratio and pad white pixels if the original images are not square), and nomralize input vectors with 'preprocess_input' function from Keras.
 2. Use [ResNet-50](https://keras.io/applications/#resnet50) model (pretrained on ImageNet) to extract visual feature. You will get a 2048d vector for each image. ('pooling = 'max'') Save the feature vectors as twitter_img.npy.
 
 ### Extracting Text Features
