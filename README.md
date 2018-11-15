@@ -28,7 +28,7 @@ We will be using [Twitter malicious data](https://about.twitter.com/en_us/values
 ### Data Preparation:
 1. Download tweet information and media archives list from Internet Research Agency, and further download ira_tweet_media_hashed_1.zip. 
 2. Extract all the files.
-3. Create a list of twitter ids of the image files (please do not include vidoes or gifs) in ira_1, sort, and save it to twitter.txt.
+3. Create a list of twitter ids of the image files (please do not include vidoes or gifs) in the folder ira_1, sort, and save the list to twitter.txt.
 4. Find the corresponding tweets in ira_tweets_csv_hashed file and save it to twitter_tweets.txt. (Make sure to read it with 'utf-8' encoding and save it with 'utf-8' encoding as well)
 
 ### Extracting Image Features
