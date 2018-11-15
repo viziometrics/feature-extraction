@@ -6,12 +6,12 @@ This repository is a simple exercise to extract image and text feature using sta
 [A Beginner's Guide To Understanding Convolutional Neural Networks](https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks/) There are three articles in this series. Highly recommended.
 
 ## Requirements:
-Ubuntu/MacOs
-Keras
-python
-Tensorflow
-Glove
-numpy
+- Ubuntu/MacOS
+- Keras
+- python
+- Tensorflow
+- Glove
+- numpy
 
 
 ## Data:
@@ -36,6 +36,8 @@ We will be using [Twitter malicious data](https://about.twitter.com/en_us/values
 2. Use [ResNet-50](https://keras.io/applications/#resnet50) model (pretrained on ImageNet) to extract visual feature. You will get a 2048d vector for each image. (pooling = 'max') Save the feature vectors as twitter_img.npy.
 
 ### Extracting Text Features
-1. Download word embedding model [Glove](https://nlp.stanford.edu/projects/glove/) which is pretrained on twitter data.
+1. Download the [Glove](https://nlp.stanford.edu/projects/glove/) word embedding model pretrained on twitter data.
 2. Text embedding will be the average of all word vectors in the tweets (ignore words that are not in the vocabulary).
 3. Save the feature vectors as twitter_txt.npy. 
+
+Have fun :D
