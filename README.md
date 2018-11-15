@@ -26,14 +26,14 @@ We will be using [Twitter malicious data](https://about.twitter.com/en_us/values
 ## Steps:
 
 ### Data Preparation:
-1. Download tweet information the list of media archives from Internet Research Agency, and further download ira_tweet_media_hashed_1.zip. 
+1. Download tweet information and media archives list from Internet Research Agency, and further download ira_tweet_media_hashed_1.zip. 
 2. Extract all the files.
 3. Create a list of twitter ids of the image files (please do not include vidoes or gifs) in ira_1, sort, and save it to twitter.txt.
 4. Find the corresponding tweets in ira_tweets_csv_hashed file and save it to twitter_tweets.txt. (Make sure to read it with 'utf-8' encoding and save it with 'utf-8' encoding as well)
 
 ### Extracting Image Features
-1. Load images, resize images to (224, 224, 3) (remain aspect ratio and pad white pixels if the original images are not square), and nomralize input vectors with preprocess_input function on Keras.
-2. Use [ResNet-50](https://keras.io/applications/#resnet50) model (pretrained on ImageNet) to extract visual feature. You will get a 2048d vector for each image. (pooling = 'max') Save the feature vectors as twitter_img.npy.
+1. Load images, resize images to (224, 224, 3) (remain aspect ratio and pad white pixels if the original images are not square), and nomralize input vectors with 'preprocess_input' function on Keras.
+2. Use [ResNet-50](https://keras.io/applications/#resnet50) model (pretrained on ImageNet) to extract visual feature. You will get a 2048d vector for each image. ('pooling = 'max'') Save the feature vectors as twitter_img.npy.
 
 ### Extracting Text Features
 1. Download the [Glove](https://nlp.stanford.edu/projects/glove/) word embedding model pretrained on twitter data.
