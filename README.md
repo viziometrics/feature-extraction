@@ -1,12 +1,10 @@
-# Image and Text Feature Extraction Exercise
-
-This repository is a simple exercise to extract image and text feature using state-of-the-art image and text embedding models.
+# Introduction to Feature Extraction
+This repository is an introduction to extracting image and text feature using state-of-the-art image and text embedding models.
 
 ## Useful Articles:
 [A Beginner's Guide To Understanding Convolutional Neural Networks](https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks/) There are three articles in this series. Highly recommended.
 
 ## Requirements:
-- Ubuntu/MacOS
 - Keras
 - python
 - Tensorflow
@@ -15,7 +13,7 @@ This repository is a simple exercise to extract image and text feature using sta
 
 
 ## Data:
-We will be using [Twitter malicious data](https://about.twitter.com/en_us/values/elections-integrity.html#data) for this exercise.
+We will be using [Twitter malicious data](https://about.twitter.com/en_us/values/elections-integrity.html#data) for this task.
 
 ## Outputs:
 1. twitter.txt: a list of twitter id.
